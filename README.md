@@ -1,2 +1,2 @@
 # text-rpg
-A simple repository for Text Based RPG Game
+A simple script for Text Based RPG Game
