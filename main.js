@@ -2,21 +2,21 @@ let textarea = "";
 let input = "";
 function setElem(textareaid, inputid){
   if(textareaid == null || textareaid == ""){
-    console.log("setElem() occured an error. Missing: textareaid argument.");
+    console.error("setElem() occured an error. Missing: textareaid argument.", (new Error().stack.split("at ")[1]).trim());
   } else {
     if(document.getElementById(textareaid)){
       textarea = document.getElementById(textareaid);
     }else{
-    console.log("setElem() occured an error. Element with the id '" + textareaid + "' was not found.")
+    console.error("setElem() occured an error. Element with the id '" + textareaid + "' was not found.", (new Error().stack.split("at ")[1]).trim())
     }
   }
   if(inputid == null || inputid == ""){
-    console.log("setElem() occured an error. Missing: inputid argument.");
+    console.error("setElem() occured an error. Missing: inputid argument.", (new Error().stack.split("at ")[1]).trim());
   } else {
     if(document.getElementById(inputid)){
       textarea = document.getElementById(inputid);
     }else{
-    console.log("setElem() occured an error. Element with the id '" + inputid + "' was not found.")
+    console.error("setElem() occured an error. Element with the id '" + inputid + "' was not found.", (new Error().stack.split("at ")[1]).trim())
     }
   }
 }
