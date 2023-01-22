@@ -28,7 +28,3 @@ const gen = (t) => `${line(t.length)}\n${t}\n${line(t.length)}`;
 const clear = (el) => {
   el.value = '';
 };
-
-setInterval(() => {
-  s.scrollTop = s.scrollHeight;
-},0)
